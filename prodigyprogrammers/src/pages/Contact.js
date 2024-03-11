@@ -8,7 +8,7 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [program, setProgram] = useState("");
 
-  axios.defaults.withCredentials = true;
+
   const handleSubmit = (e) => {
     e.preventDefault();
     axios.post('https://tutoring-signup-website.vercel.app/register', { name, email, program })
