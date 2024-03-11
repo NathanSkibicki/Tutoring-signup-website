@@ -1,0 +1,57 @@
+.About{
+    text-align: center;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.AboutUsHeader{
+    color: white;
+    font-size: xx-large;
+    padding-top: 20px;
+}
+.aboutBox{
+    display: flex;
+    transform: translateX(110%);
+    border-radius: 25px;
+    background-color: #5e94c4;;
+    width: 600px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.aboutText{
+    padding:20px;
+}
+.aboutGridList{
+    transform: translateY(50px);
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    column-gap: 150px;
+    grid-template-columns: auto auto auto auto;
+}
+.aboutGridList .gridItem{
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(200, 191, 191);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.aboutGridList .gridItem img{
+    width:75px;
+    height: 75px;
+}
+.aboutGridList .gridItem .headerDesc{
+    font-weight: bold;
+}
+.aboutGridList .gridItem .desc{
+    font-size: small;
+}

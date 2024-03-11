@@ -1,0 +1,76 @@
+.programPage{
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+.programHeaderBox{
+    display: flex;
+    margin-top: 50px;
+    text-align: center;
+}
+.programHeader{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.programList{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content:center;
+    border-radius: 25px;
+    border: 2px solid white;
+    width: 90%;
+    height: 700px;
+}
+.programList .listElement{
+    display:grid;
+    border-radius:25px;
+    border: 2px solid white;
+    background-color: white;
+    width: 1200px;
+    height:130px;
+    margin-top: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.programList .listElement .listGrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 5px;
+}
+.programList .listElement img{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    height: 70px;
+    width: 70px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-right: 5%;
+    padding-left: 3%;
+    transform: translateY(-40px)
+}
+.programList .listElement .listGrid h3{
+    color: purple;
+    padding-left: 3%;
+    padding-top: 1%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+.programList .listElement .listGrid .empGrade{
+    color: blue;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.programList .listElement .listGrid p{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: small;
+    padding-left: 3%;
+}

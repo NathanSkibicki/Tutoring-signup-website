@@ -1,0 +1,34 @@
+.Jobs{
+    text-align: center;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.jobHeader{
+    font-size: xx-large;
+    padding-top: 50px;
+}
+.jobList{
+    display: flex;
+    flex-direction: column;
+    transform: translateX(30%);
+    border-radius: 25px;
+    background-color: #5e94c4;;
+    width: 1200px;
+    height: 700px;
+}
+.jobList .jobListItem{
+    display: flex;
+    padding-top: 50px;
+    padding-left : 40px
+}
+.jobList .jobListItem ul{
+    padding-left: 50px;
+}
+.emailDesc{
+    padding-top: 50px;
+    font-weight: normal;
+}
