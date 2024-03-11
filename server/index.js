@@ -5,7 +5,7 @@ const ApplicationModel = require('./models/Applications')
 
 const app = express()
 
-app.use(express.json())
+
 app.use(cors(
     {
         origin: ["https://prodigy-coders.vercel.app"],
@@ -13,9 +13,13 @@ app.use(cors(
         credentials: true
     }
 ))
+app.use(express.json())
 
 mongoose.connect("mongodb://127.0.0.1:27017/prodigyprogrammers")
 
+app.get("/", (req, res) =>{
+    res.json("Test");
+})
 app.post('/register', (req, res)=>{
     ApplicationModel.create(req.body)
     .then(application => res.json(application))
